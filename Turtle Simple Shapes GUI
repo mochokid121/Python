@@ -1,0 +1,36 @@
+# Draws a triange, square, pentagon, hexagon, and circle
+
+import turtle
+
+# Draws triangle
+turtle.pensize(3) # Set the pen thickness to 3 pixels
+turtle.penup() # Pull the pen up
+turtle.goto(-200, -50)
+turtle.pendown() # Pull the pen down
+turtle.circle(40, steps = 3) # Draw triangle
+
+# Draw square
+turtle.penup()
+turtle.goto(-100, -50)
+turtle.pendown()
+turtle.circle(40, steps = 4)
+
+# Draw Pentagon
+turtle.penup()
+turtle.goto(0, -50)
+turtle.pendown()
+turtle.circle(40, steps = 5)
+
+# Draw hexagon
+turtle.penup()
+turtle.goto(100, -50)
+turtle.pendown()
+turtle.circle(40, steps = 6)
+
+# Draw a circle
+turtle.penup()
+turtle.goto(200, -50)
+turtle.pendown()
+turtle.circle(40)
+
+turtle.done()
