@@ -1,0 +1,23 @@
+# Leap Year
+
+year = eval(input("Enter a year: "))
+
+# Check if the year is a leap year. Displays true or false in output
+isLeapYear = (year % 4 == 0 and year % 100 != 0) or \
+    (year % 400 == 0)
+
+# Display the output
+print("Is", year, "a leap year?", isLeapYear)
+
+'''
+RESULTS:
+
+Enter a year: 2010
+Is 2010 a leap year? False
+Press any key to continue . . .
+
+
+Enter a year: 2008
+Is 2008 a leap year? True
+Press any key to continue . . .
+'''
