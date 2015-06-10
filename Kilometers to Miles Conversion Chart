@@ -1,0 +1,53 @@
+print(format("Miles", "<15s"), format("Kilometers", ">10s"))
+print("--------------------------------")
+
+miles = 1
+while miles <= 10:
+    print(format(miles, "<15d"), format(miles * 1.609, "<10.3f"))
+    miles += 1
+
+print (" ")
+print(format("Kilometers", "<15s"), format("Miles", ">10s"))
+print("---------------------------------")
+
+kilometers = 1
+while kilometers <= 65:
+    print(format(kilometers, "<15d"), format(kilometers / 1.609, "<10.3f"))
+    kilometers += 1
+
+
+'''
+RESULTS:
+
+Miles           Kilometers
+--------------------------------
+1               1.609
+2               3.218
+3               4.827
+4               6.436
+5               8.045
+6               9.654
+7               11.263
+8               12.872
+9               14.481
+10              16.090
+
+Kilometers           Miles
+---------------------------------
+1               0.622
+2               1.243
+3               1.865
+4               2.486
+5               3.108
+6               3.729
+7               4.351
+8               4.972
+9               5.594
+10              6.215
+11              6.837
+12              7.458
+13              8.080
+14              8.701
+15              9.323
+Press any key to continue . . .
+'''
